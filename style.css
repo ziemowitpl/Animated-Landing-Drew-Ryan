@@ -1,24 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:500');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* reset styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* add image and give it 100vh/100% (full screen) and center it */
+.intro {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: url('img/forrest.png') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+/* text and button center with this propetires */
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 25%;
+}
+/* add fonts to subtitle DISCOVER, color, resize and add shadow */
+.content h1 {
+    font-size: "Open Sans", sans-serif;
+    color: #f9f3f4;
+    font-size: 550%;
+    text-shadow: 3px 3px #098fa8;
+}
+/* design a button add larer font size, fonts, color add border and radius it */
+.btn {
+    font-size: 150%;
+    font-family: "Popins", sans-serif;
+    text-decoration: none;
+    color: #098fa8;
+    border: 2px solid #098fa8;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* add hover state and move effect */
+.btn:hover {
+    color: #156377;
+    border: 2px solid #156377;
+    line-height: 190%;
+    text-align: justify;
+    margin: 3%;
+}
+/* add styles for small screen */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 300%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 100%;
+        line-height: 160%;
+    }
+}
